@@ -17,8 +17,8 @@ Schoolguide - электронный дневник с большим функц
    * калькулятор рейтинга
    * уведолмения
 # ⚒️стек⚙️
-
-[![My Skills](https://skillicons.dev/icons?i=dart)](https://skillicons.dev) Dart - язык программирования
+[![My Skills](https://skillicons.dev/icons?i=dart,flutter,firebase)](https://skillicons.dev)
+Dart - язык программирования
 Flutter - фреймворк
 Firebase - sdk database
 
