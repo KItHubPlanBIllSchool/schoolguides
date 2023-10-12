@@ -18,9 +18,9 @@ Schoolguide - электронный дневник с большим функц
    * уведолмения
 # ⚒️стек⚙️
 [![My Skills](https://skillicons.dev/icons?i=dart,flutter,firebase)](https://skillicons.dev)
-Dart - язык программирования
-Flutter - фреймворк
-Firebase - sdk database
+* Dart - язык программирования
+* Flutter - фреймворк
+* Firebase - sdk database
 
 
 
