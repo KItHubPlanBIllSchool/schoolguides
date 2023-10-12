@@ -16,9 +16,12 @@ Schoolguide - электронный дневник с большим функц
 6) электронный дневник(❌)
    * калькулятор рейтинга
    * уведолмения
-# стек технологии
+# ⚒️стек⚙️
 Dart - язык программирования
 Flutter - фреймворк
 Firebase - sdk database
+
+![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
+
 
 
