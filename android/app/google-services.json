@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "618058460930",
+    "firebase_url": "https://hackhaton-ef4fa-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "hackhaton-ef4fa",
+    "storage_bucket": "hackhaton-ef4fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618058460930:android:1ffc7b2b6c802c93b51c1b",
+        "android_client_info": {
+          "package_name": "com.example.hackathon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBe70eLvfH4pA3nSFaaudAk4dAgqyj7w2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618058460930:android:dd08738633d71a45b51c1b",
+        "android_client_info": {
+          "package_name": "com.example.mpit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBe70eLvfH4pA3nSFaaudAk4dAgqyj7w2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
