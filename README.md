@@ -16,11 +16,13 @@ Schoolguide - электронный дневник с большим функц
 6) электронный дневник(❌)
    * калькулятор рейтинга
    * уведолмения
-# ⚒️стек⚙️
+# ⚒️Технологии⚙️
 [![My Skills](https://skillicons.dev/icons?i=dart,flutter,firebase)](https://skillicons.dev)
 * Dart - язык программирования
 * Flutter - фреймворк
 * Firebase - sdk database
+
+  
 
 
 
