@@ -17,11 +17,10 @@ Schoolguide - электронный дневник с большим функц
    * калькулятор рейтинга
    * уведолмения
 # ⚒️стек⚙️
-Dart - язык программирования
+
+[![My Skills](https://skillicons.dev/icons?i=dart)](https://skillicons.dev) Dart - язык программирования
 Flutter - фреймворк
 Firebase - sdk database
-
-![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
 
 
 
