@@ -24,8 +24,8 @@ Schoolguide - электронный дневник с большим функц
 
 * # ❗Как запустить приложение❓
   Потребуется несколько приложении, чтоб запустить его где угодно
-      * Flutter
-      * Android studio
+  * Flutter
+  * Android studio
  1) Установить [Flutter SDK](https://docs.flutter.dev/get-started/install).
  2) Разархивировать папку Flutter в .zip файле в желаемом месте, например (%USERPROFILE%\flutter, D:\dev\flutter)
      * ⚠️ Не устанавивливайте его где содержаться **специальные знаки(#$@!$)** или пробелы
