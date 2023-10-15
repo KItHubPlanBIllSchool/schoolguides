@@ -12,6 +12,7 @@ import 'package:hackathon/pages/list_screen.dart';
 import 'package:hackathon/pages/menu_screen.dart';
 import 'package:hackathon/var/var.dart';
 import 'package:hackathon/widgets/add_body.dart';
+import 'package:hackathon/pages/darhan.dart';
 
 import '../widgets/account_body.dart';
 import '../widgets/main_body.dart';
@@ -30,7 +31,8 @@ class _ScreenState extends State<Screen> {
     });
   }
 
-  List<Widget> body_main = [MainBody(), AccountBody()];
+  //List<Widget> body_main = [MainBody(), AccountBody()];
+  List<Widget> body_main = [MainBody(), DarhanScreen(),AccountBody()];
   @override
   void initState() {
     super.initState();
@@ -50,7 +52,7 @@ class _ScreenState extends State<Screen> {
   @override
   Widget build(BuildContext context) {
     if (admin.contains(user!.email)) {
-      body_main = [MainBody(), AddBody(), AccountBody()];
+      body_main = [MainBody(),DarhanScreen(), AddBody(), AccountBody()]; 
     }
 
     GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
@@ -103,12 +105,20 @@ class _ScreenState extends State<Screen> {
                         icon: Icon(Icons.map_outlined),
                         label: 'Карта',
                       ),
+                       BottomNavigationBarItem(
+                        icon: Icon(Icons.access_time_outlined),
+                        label: 'вфвф',
+                      ),
                       BottomNavigationBarItem(
                           icon: Icon(
                             Icons.add,
                           ),
                           label: 'Добавить'),
+                          
                       BottomNavigationBarItem(
+                          icon: Icon(Icons.access_time_outlined),
+                          label: 'лолол'),
+                           BottomNavigationBarItem(
                           icon: Icon(Icons.person_outline),
                           label: 'Пользователь')
                     ],
@@ -126,14 +136,13 @@ class _ScreenState extends State<Screen> {
                             Icons.map_outlined,
                           ),
                           label: 'Карта'),
-                      BottomNavigationBarItem(
-                          icon: Icon(Icons.person_outline),
-                          label: 'Пользователь')
+                      
                     ],
                     iconSize: 30,
                     currentIndex: selectedIndex,
                     onTap: _onItemTapped,
-                  )),
+                  )
+                  ),
       ),
       appBar: AppBar(
           leading: IconButton(
@@ -173,30 +182,21 @@ class _ScreenState extends State<Screen> {
                     style: TextStyle(
                         fontSize: 17,
                         color: textColor,
-                        fontFamily: 'comfortaa')),
+                        fontFamily: 'onest')),
               ),
-              // GestureDetector(
-              //   onTap: () {
-              //     Navigator.push(context,
-              //         MaterialPageRoute(builder: (context) => ChatScreen()));
-              //   },
-              //   child: Text('Чат',
-              //       style: TextStyle(
-              //           fontSize: 17,
-              //           color: textColor,
-              //           fontFamily: 'comfortaa')),
-              // ),
-              GestureDetector(
+               GestureDetector(
                 onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => MenuScreen()));
-                },
-                child: Text('Меню',
-                    style: TextStyle(
-                        fontSize: 17,
-                        color: textColor,
-                        fontFamily: 'comfortaa')),
-              )
+               Navigator.push(context,
+               MaterialPageRoute(builder: (context) => ChatScreen()));
+              },
+              child: Text('Чат',
+              style: TextStyle(
+              fontSize: 17,
+                      color: textColor,
+                         fontFamily: 'onest')),
+               ),
+               
+              
             ],
           )),
       body: body_main[selectedIndex],

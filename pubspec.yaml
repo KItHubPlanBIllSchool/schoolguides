@@ -48,6 +48,7 @@ dependencies:
   flutter_firebase_chat_core: ^1.6.4
   zoom_widget: ^2.0.0
   url_launcher: ^6.1.10
+  intl: ^0.17.0
 
 dev_dependencies:
   flutter_test:
@@ -81,6 +82,9 @@ flutter:
     - lib/assets/images/Illustration.svg
     - lib/assets/images/Vector.svg
     - lib/assets/images/Group 2.svg
+    - lib/assets/images/logobig.svg
+    - lib/assets/images/curved.jpg
+    
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

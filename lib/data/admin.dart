@@ -9,7 +9,7 @@ List<Map<String, dynamic>> admin2 = [
   },
   {
     "email": "test@icloud.com",
-    "name": "Владимир",
+    "name": "Мордовской Аман",
     "lastName": "Корякин",
     "uid": ""
   },

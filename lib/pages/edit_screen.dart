@@ -74,7 +74,7 @@ class _EditScreenState extends State<EditScreen> {
               child: Column(
                 children: [
                   TextFormField(
-                    style: TextStyle(color: textColor, fontFamily: 'comfortaa'),
+                    style: TextStyle(color: textColor, fontFamily: 'onest'),
                     keyboardType: TextInputType.text,
                     controller: nameTextInputController,
                     autocorrect: false,
@@ -87,12 +87,12 @@ class _EditScreenState extends State<EditScreen> {
                       hintStyle: TextStyle(
                           color: Color.fromRGBO(162, 162, 162, 1),
                           fontSize: 16,
-                          fontFamily: 'comfortaa'),
+                          fontFamily: 'onest'),
                       hintText: 'Название',
                     ),
                   ),
                   TextFormField(
-                    style: TextStyle(color: textColor, fontFamily: 'comfortaa'),
+                    style: TextStyle(color: textColor, fontFamily: 'onest'),
                     keyboardType: TextInputType.text,
                     controller: eventTextInputController,
                     autocorrect: false,
@@ -102,12 +102,12 @@ class _EditScreenState extends State<EditScreen> {
                       hintStyle: TextStyle(
                           color: Color.fromRGBO(176, 182, 189, 1),
                           fontSize: 16,
-                          fontFamily: 'comfortaa'),
+                          fontFamily: 'onest'),
                       hintText: 'Мероприятия',
                     ),
                   ),
                   TextFormField(
-                    style: TextStyle(color: textColor, fontFamily: 'comfortaa'),
+                    style: TextStyle(color: textColor, fontFamily: 'onest'),
                     keyboardType: TextInputType.text,
                     controller: infoTextInputController,
                     autocorrect: false,
@@ -117,12 +117,12 @@ class _EditScreenState extends State<EditScreen> {
                       hintStyle: TextStyle(
                           color: Color.fromRGBO(176, 182, 189, 1),
                           fontSize: 16,
-                          fontFamily: 'comfortaa'),
+                          fontFamily: 'onest'),
                       hintText: 'Информация',
                     ),
                   ),
                   TextFormField(
-                    style: TextStyle(color: textColor, fontFamily: 'comfortaa'),
+                    style: TextStyle(color: textColor, fontFamily: 'onest'),
                     keyboardType: TextInputType.text,
                     controller: listTextInputController,
                     autocorrect: false,
@@ -132,12 +132,12 @@ class _EditScreenState extends State<EditScreen> {
                       hintStyle: TextStyle(
                           color: Color.fromRGBO(176, 182, 189, 1),
                           fontSize: 16,
-                          fontFamily: 'comfortaa'),
+                          fontFamily: 'onest'),
                       hintText: 'Список оборудования',
                     ),
                   ),
                   TextFormField(
-                    style: TextStyle(color: textColor, fontFamily: 'comfortaa'),
+                    style: TextStyle(color: textColor, fontFamily: 'onest'),
                     keyboardType: TextInputType.text,
                     controller: responsibleTextInputController,
                     autocorrect: false,
@@ -147,7 +147,7 @@ class _EditScreenState extends State<EditScreen> {
                       hintStyle: TextStyle(
                           color: Color.fromRGBO(176, 182, 189, 1),
                           fontSize: 16,
-                          fontFamily: 'comfortaa'),
+                          fontFamily: 'onest'),
                       hintText: 'Ответственный',
                     ),
                   ),
@@ -196,7 +196,7 @@ class _EditScreenState extends State<EditScreen> {
                                 color: Colors.black,
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
-                                fontFamily: 'comfortaa'),
+                                fontFamily: 'onest'),
                           ))),
                     ),
                   ),

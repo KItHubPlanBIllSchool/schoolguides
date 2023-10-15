@@ -571,7 +571,7 @@ class _MainBodyState extends State<MainBody> {
                                       });
                                     },
                                     child: Container(
-                                      color: Color.fromRGBO(255, 255, 255, 0),
+                                      color: Color.fromRGBO(255, 0, 0, 0),
                                       width: 9,
                                       height: 19,
                                     ),
@@ -3574,7 +3574,7 @@ class _MainBodyState extends State<MainBody> {
                                         },
                                         child: Container(
                                           color:
-                                              Color.fromRGBO(255, 255, 255, 0),
+                                              Color.fromRGBO(255, 0, 0, 1),
                                           width: 11,
                                           height: 12,
                                         ),
@@ -3730,7 +3730,7 @@ class _MainBodyState extends State<MainBody> {
                                         },
                                         child: Container(
                                           color:
-                                              Color.fromRGBO(255, 255, 255, 0),
+                                              Color.fromRGBO(255, 0, 0, 1),
                                           width: 10,
                                           height: 15,
                                         ),
@@ -3782,7 +3782,7 @@ class _MainBodyState extends State<MainBody> {
                                         },
                                         child: Container(
                                           color:
-                                              Color.fromRGBO(255, 255, 255, 0),
+                                              Color.fromRGBO(167, 51, 51, 1),
                                           width: 10,
                                           height: 13,
                                         ),

@@ -127,17 +127,17 @@ class _SignUpScreen extends State<SignUpScreen> {
       backgroundColor: background,
       body: ListView(children: <Widget>[
         Padding(
-          padding: const EdgeInsets.only(left: 30.0, right: 30),
+          padding: const EdgeInsets.only(left: 20.0, right: 30),
           child: Form(
             key: formKey,
             child: Column(
               children: [
                 SvgPicture.asset(
                   'lib/assets/images/Vector.svg',
-                  height: 75,
+                  height: 105,
                 ),
                 Container(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 40, 0, 0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 10, 180, 0),
                   child: Center(
                       child: Text(
                     'Регистрация',
@@ -148,10 +148,40 @@ class _SignUpScreen extends State<SignUpScreen> {
                         fontFamily: 'onest'),
                   )),
                 ),
-                const SizedBox(
-                  height: 130,
+                Container(
+                  width: 1000,
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 10, 100, 0),
+                  child: Center(
+                      child: Text(
+                    'Введите свою личную информацию',
+                    style: TextStyle(
+                        color: const Color.fromRGBO(164, 172, 183, 1),
+                        fontSize: 12,
+                        fontFamily: 'onest'),
+                  )),
                 ),
-                TextFormField(
+                const SizedBox(
+                  height: 10,
+                ),
+                Container(
+                  width: 1000,
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 10, 250, 0),
+                  child: Center(
+                      child: Text(
+                    'ФИО',
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'onest'),
+                  )),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(153, 216, 216, 216),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: TextFormField(
                   style: TextStyle(color: textColor, fontFamily: 'onest'),
                   keyboardType: TextInputType.name,
                   controller: firstNameTextInputController,
@@ -169,10 +199,17 @@ class _SignUpScreen extends State<SignUpScreen> {
                     hintText: 'Имя',
                   ),
                 ),
+                ),
+               
                 const SizedBox(
                   height: 10,
                 ),
-                TextFormField(
+                Container(
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(153, 216, 216, 216),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                 child: TextFormField(
                   style: TextStyle(color: textColor, fontFamily: 'onest'),
                   keyboardType: TextInputType.name,
                   controller: secondNameTextInputController,
@@ -190,10 +227,30 @@ class _SignUpScreen extends State<SignUpScreen> {
                     hintText: 'Фамилия',
                   ),
                 ),
+                ),
+                
                 const SizedBox(
                   height: 10,
                 ),
-                TextFormField(
+                Container(
+                  width: 1000,
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 10, 250, 0),
+                  child: Center(
+                      child: Text(
+                    'Почта',
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'onest'),
+                  )),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(153, 216, 216, 216),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: TextFormField(
                   style: TextStyle(color: textColor, fontFamily: 'onest'),
                   keyboardType: TextInputType.emailAddress,
                   autocorrect: false,
@@ -211,10 +268,31 @@ class _SignUpScreen extends State<SignUpScreen> {
                     hintText: 'Введите Email',
                   ),
                 ),
+                ),
+
+                
                 const SizedBox(
                   height: 10,
                 ),
-                TextFormField(
+                Container(
+                  width: 1000,
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 10, 250, 0),
+                  child: Center(
+                      child: Text(
+                    'Пароль',
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'onest'),
+                  )),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(153, 216, 216, 216),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: TextFormField(
                   style: TextStyle(color: textColor, fontFamily: 'onest'),
                   autocorrect: false,
                   controller: passwordTextInputController,
@@ -242,8 +320,23 @@ class _SignUpScreen extends State<SignUpScreen> {
                     ),
                   ),
                 ),
+                ),
+                
                 const SizedBox(
                   height: 10,
+                ),
+                Container(
+                  width: 1000,
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 10, 140, 0),
+                  child: Center(
+                      child: Text(
+                    'Повторить пароль',
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'onest'),
+                  )),
                 ),
                 Container(
                   decoration: BoxDecoration(
@@ -280,7 +373,7 @@ class _SignUpScreen extends State<SignUpScreen> {
                   ),
                 ),
                 const SizedBox(
-                  height: 60,
+                  height: 30,
                 ),
                 Container(
                   child: ElevatedButton(

@@ -7,8 +7,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hackathon/data/colors.dart';
 import 'package:hackathon/var/var.dart';
 import 'package:url_launcher/url_launcher.dart';
-
-import '../models/user_model.dart';
+import 'dart:math';
+import 'package:hackathon/models/user_model.dart';
 
 class AccountBody extends StatefulWidget {
   const AccountBody({super.key});
@@ -16,6 +16,7 @@ class AccountBody extends StatefulWidget {
   @override
   State<AccountBody> createState() => _AccountBodyState();
 }
+enum MenuItem { item1, item2 }
 
 class _AccountBodyState extends State<AccountBody> {
   @override
@@ -30,11 +31,24 @@ class _AccountBodyState extends State<AccountBody> {
       setState(() {});
     });
   }
+  Future<void> signOut() async {
+    final navigator = Navigator.of(context);
+    FirebaseAuth.instance.signOut();
+    navigator.pushNamedAndRemoveUntil('/', (Route<dynamic> route) => false);
+  }
+
+  Future<void> delete() async {
+    final navigator = Navigator.of(context);
+    FirebaseFirestore.instance.collection('users').doc(user!.uid).delete();
+    FirebaseAuth.instance.currentUser!.delete();
+    navigator.pushNamedAndRemoveUntil('/', (Route<dynamic> route) => false);
+  }
 
   User? user = FirebaseAuth.instance.currentUser;
   UserModel loggedInUser = UserModel();
 
   @override
+  
   Widget build(BuildContext context) {
     if (loggedInUser.firstName == null) {
       return Scaffold(
@@ -56,6 +70,66 @@ class _AccountBodyState extends State<AccountBody> {
             ],
           ));
     }
+     AppBar(
+        toolbarHeight: 65,
+        backgroundColor: appColor,
+        elevation: 0,
+        automaticallyImplyLeading: false,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(
+            Icons.arrow_back,
+            color: Color.fromRGBO(176, 182, 189, 1),
+          ),
+        ),
+        title: const Text(
+          'Редактирование профиля',
+          style: TextStyle(
+              color: Color.fromRGBO(176, 182, 189, 1),
+              fontWeight: FontWeight.bold,
+              fontFamily: 'comfortaa',
+              fontSize: 17),
+        ),
+        actions: [
+          PopupMenuButton<MenuItem>(
+            icon: const Icon(
+              Icons.more_vert,
+              color: Color.fromRGBO(176, 182, 189, 1),
+            ),
+            onSelected: (value) async {
+              setState(() {
+                if (value == MenuItem.item1) {
+                  signOut();
+                } else {
+                  delete();
+                }
+              });
+            },
+            itemBuilder: (context) => const [
+              PopupMenuItem(
+                  value: MenuItem.item1,
+                  child: Text(
+                    'Выйти из аккаунта',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontFamily: 'comfortaa',
+                        fontSize: 17),
+                  )),
+              PopupMenuItem(
+                  value: MenuItem.item2,
+                  child: Text(
+                    'Удалить аккаунт',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontFamily: 'comfortaa',
+                        fontSize: 17),
+                  ))
+            ],
+          )
+        ],
+      );
     return ListView(
       children: [
         Container(
@@ -115,7 +189,9 @@ class _AccountBodyState extends State<AccountBody> {
             ),
           ),
         ),
+        
         GestureDetector(
+          
           onTap: () async {
             await launchUrl(Uri.parse('https://sgo.e-yakutia.ru/'));
           },
@@ -139,9 +215,14 @@ class _AccountBodyState extends State<AccountBody> {
                 ),
               ],
             ),
+            
           ),
+          
+          
         ),
       ],
+      
     );
+    
   }
 }

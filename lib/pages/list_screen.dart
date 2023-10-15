@@ -63,7 +63,7 @@ class _ListScreenState extends State<ListScreen> {
                                           style: TextStyle(
                                               fontSize: 17,
                                               color: Colors.white,
-                                              fontFamily: 'comfortaa'))))),
+                                              fontFamily: 'onest'))))),
                         ),
                       );
                     }),

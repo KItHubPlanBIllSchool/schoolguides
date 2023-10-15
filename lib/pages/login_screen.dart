@@ -99,7 +99,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               SvgPicture.asset(
                 'lib/assets/images/Vector.svg',
-                height: 75,
+                height: 105,
               ),
               const Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0, 50, 0, 15),
@@ -118,6 +118,7 @@ class _LoginScreenState extends State<LoginScreen> {
               const Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 15),
                 child: Align(
+                  
                   alignment: Alignment.centerLeft,
                   child: Text(
                     'Введите данные своего аккаунта',
@@ -193,7 +194,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               const SizedBox(height: 30),
-              Container(
+              SizedBox(
                 height: 60.0,
                 width: 1001,
                 child: ElevatedButton(

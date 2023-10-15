@@ -26,24 +26,17 @@ class _GreetingScreenState extends State<GreetingScreen> {
               Center(
                   child: SvgPicture.asset(
                 'lib/assets/images/Illustration.svg',
-                height: 190,
+                height: 180,
               )),
               SizedBox(
-                height: 70,
+                height: 60,
               ),
               Row(
+                
                 children: [
-                  SvgPicture.asset('lib/assets/images/Vector.svg'),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
-                    child: Text(
-                      'SchoolGuide',
-                      style: TextStyle(
-                          fontSize: 24,
-                          color: Color.fromRGBO(55, 60, 101, 1),
-                          fontWeight: FontWeight.w700),
-                    ),
-                  )
+                  SvgPicture.asset(
+                    'lib/assets/images/logobig.svg', height: 70,),
+                  
                 ],
               ),
               const SizedBox(
