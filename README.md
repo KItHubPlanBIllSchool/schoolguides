@@ -32,9 +32,7 @@ Schoolguide - электронный дневник с большим функц
      * ⚠️ Не устанавливайте его в C:\Program Files\ , для этого требуется привелегии, что может затруднить дальнейшее использование
  3) Разархивировать приложение рядом с папкой Flutter
  4) Внутри проекта в терминале прописать:
-     ```
-    flutter pud add firebase_auth
-     ```
+    'flutter pud add firebase_auth'
 5) пойти поесть пока идет загрузка и запустить Android studio
    5.1) Скачать [Android Studio](https://developer.android.com/studio).
    5.1) Следуем по инструкциям, затем внутри Visual Studio справа снизу ищем Device 
