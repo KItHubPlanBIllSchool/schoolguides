@@ -38,8 +38,10 @@ class _MainBodyState extends State<MainBody> {
                               children: [
                                 SvgPicture.asset(
                                     'lib/assets/images/Group 2.svg'),
+                                    
                                 Padding(
                                   padding: EdgeInsets.only(left: 2, top: 177),
+                                  
                                   child: GestureDetector(
                                     onTap: () {
                                       FirebaseFirestore.instance
@@ -3854,48 +3856,7 @@ class _MainBodyState extends State<MainBody> {
                       color: appColor,
                       borderRadius: BorderRadius.all(Radius.circular(10))),
                   height: 30,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            currentIndex = 0;
-                          });
-                        },
-                        child: Center(
-                            child: Text(
-                          '1 этаж',
-                          style: TextStyle(
-                              fontFamily: 'comfortaa', color: textColor),
-                        )),
-                      ),
-                      GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            currentIndex = 1;
-                          });
-                        },
-                        child: Center(
-                            child: Text('2 этаж',
-                                style: TextStyle(
-                                    fontFamily: 'comfortaa',
-                                    color: textColor))),
-                      ),
-                      GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            currentIndex = 2;
-                          });
-                        },
-                        child: Center(
-                            child: Text('3 этаж',
-                                style: TextStyle(
-                                    fontFamily: 'comfortaa',
-                                    color: textColor))),
-                      ),
-                    ],
-                  ),
+                  
                 ),
               ),
             ],

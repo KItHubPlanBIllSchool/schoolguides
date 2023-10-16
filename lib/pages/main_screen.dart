@@ -12,7 +12,8 @@ import 'package:hackathon/pages/list_screen.dart';
 import 'package:hackathon/pages/menu_screen.dart';
 import 'package:hackathon/var/var.dart';
 import 'package:hackathon/widgets/add_body.dart';
-import 'package:hackathon/pages/darhan.dart';
+import 'package:hackathon/widgets/darhan.dart';
+import 'package:hackathon/widgets/rating.dart';
 
 import '../widgets/account_body.dart';
 import '../widgets/main_body.dart';

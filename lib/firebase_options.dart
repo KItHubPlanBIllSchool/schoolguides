@@ -23,7 +23,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        return ios;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for ios - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.macOS:
         return macos;
       case TargetPlatform.windows:
@@ -49,8 +52,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '618058460930',
     projectId: 'hackhaton-ef4fa',
     authDomain: 'hackhaton-ef4fa.firebaseapp.com',
-    databaseURL:
-        'https://hackhaton-ef4fa-default-rtdb.asia-southeast1.firebasedatabase.app',
+    databaseURL: 'https://hackhaton-ef4fa-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'hackhaton-ef4fa.appspot.com',
     measurementId: 'G-4EPTCSWDP6',
   );
@@ -60,20 +62,8 @@ class DefaultFirebaseOptions {
     appId: '1:618058460930:android:dd08738633d71a45b51c1b',
     messagingSenderId: '618058460930',
     projectId: 'hackhaton-ef4fa',
-    databaseURL:
-        'https://hackhaton-ef4fa-default-rtdb.asia-southeast1.firebasedatabase.app',
+    databaseURL: 'https://hackhaton-ef4fa-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'hackhaton-ef4fa.appspot.com',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDhZqFVnS2gF_hdM-cBQ3c47LoC6bDGgLU',
-    appId: '1:618058460930:ios:09455234a7654610b51c1b',
-    messagingSenderId: '618058460930',
-    projectId: 'hackhaton-ef4fa',
-    databaseURL:
-        'https://hackhaton-ef4fa-default-rtdb.asia-southeast1.firebasedatabase.app',
-    storageBucket: 'hackhaton-ef4fa.appspot.com',
-    iosBundleId: 'com.example.hackathon',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
@@ -81,9 +71,8 @@ class DefaultFirebaseOptions {
     appId: '1:618058460930:ios:09455234a7654610b51c1b',
     messagingSenderId: '618058460930',
     projectId: 'hackhaton-ef4fa',
-    databaseURL:
-        'https://hackhaton-ef4fa-default-rtdb.asia-southeast1.firebasedatabase.app',
+    databaseURL: 'https://hackhaton-ef4fa-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'hackhaton-ef4fa.appspot.com',
-    iosBundleId: 'com.example.hackathon',
+    iosBundleId: 'com.example.mpit',
   );
 }

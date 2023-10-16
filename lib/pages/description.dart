@@ -118,8 +118,8 @@ class _DescriptionScreenState extends State<DescriptionScreen> {
                                 icon: Icon(Icons.edit_outlined,
                                     color: (admin.contains(user!.email))
                                         ? darkMode
-                                            ? Color.fromRGBO(26, 31, 41, 1)
-                                            : Color.fromRGBO(226, 229, 238, 1)
+                                            ? Color.fromRGBO(0, 0, 0, 1)
+                                            : Color.fromRGBO(0, 0, 0, 1)
                                         : Color.fromRGBO(255, 255, 255, 0)))
                           ]),
                     ),
@@ -135,7 +135,7 @@ class _DescriptionScreenState extends State<DescriptionScreen> {
                           Icons.person_outline,
                           size: 40,
                           color: darkMode
-                              ? Color.fromRGBO(226, 229, 238, 1)
+                              ? Color.fromRGBO(0, 0, 0, 1)
                               : Color.fromRGBO(26, 31, 41, 1),
                         ),
                         SizedBox(
@@ -146,7 +146,7 @@ class _DescriptionScreenState extends State<DescriptionScreen> {
                               style: TextStyle(
                                   fontSize: 15,
                                   color: darkMode
-                                      ? Color.fromRGBO(226, 229, 238, 1)
+                                      ? Color.fromRGBO(0, 0, 0, 1)
                                       : Color.fromRGBO(26, 31, 41, 1),
                                   fontFamily: 'comfortaa')),
                         )
@@ -164,7 +164,7 @@ class _DescriptionScreenState extends State<DescriptionScreen> {
                           Icons.info_outline,
                           size: 40,
                           color: darkMode
-                              ? Color.fromRGBO(226, 229, 238, 1)
+                              ? Color.fromRGBO(0, 0, 0, 1)
                               : Color.fromRGBO(26, 31, 41, 1),
                         ),
                         SizedBox(
@@ -175,7 +175,7 @@ class _DescriptionScreenState extends State<DescriptionScreen> {
                               style: TextStyle(
                                   fontSize: 15,
                                   color: darkMode
-                                      ? Color.fromRGBO(226, 229, 238, 1)
+                                      ? Color.fromRGBO(0, 0, 0, 1)
                                       : Color.fromRGBO(26, 31, 41, 1),
                                   fontFamily: 'comfortaa')),
                         )
@@ -193,8 +193,8 @@ class _DescriptionScreenState extends State<DescriptionScreen> {
                           Icons.monitor_outlined,
                           size: 40,
                           color: darkMode
-                              ? Color.fromRGBO(226, 229, 238, 1)
-                              : Color.fromRGBO(26, 31, 41, 1),
+                              ? Color.fromRGBO(0, 0, 0, 1)
+                              : Color.fromRGBO(0, 0, 0, 1),
                         ),
                         SizedBox(
                           width: 10,
@@ -204,7 +204,7 @@ class _DescriptionScreenState extends State<DescriptionScreen> {
                               style: TextStyle(
                                   fontSize: 15,
                                   color: darkMode
-                                      ? Color.fromRGBO(226, 229, 238, 1)
+                                      ? Color.fromRGBO(0, 0, 0, 1)
                                       : Color.fromRGBO(26, 31, 41, 1),
                                   fontFamily: 'comfortaa')),
                         )
@@ -218,7 +218,7 @@ class _DescriptionScreenState extends State<DescriptionScreen> {
                       decoration: BoxDecoration(
                           color: darkMode
                               ? Color.fromRGBO(226, 229, 238, 1)
-                              : Color.fromRGBO(26, 31, 41, 1),
+                              : Color.fromRGBO(255, 255, 255, 1),
                           borderRadius: BorderRadius.all(Radius.circular(17))),
                       child: Column(
                         children: [
@@ -227,12 +227,12 @@ class _DescriptionScreenState extends State<DescriptionScreen> {
                             decoration: BoxDecoration(
                                 border: Border.all(
                                     color: darkMode
-                                        ? Color.fromRGBO(26, 31, 41, 1)
-                                        : Color.fromRGBO(226, 229, 238, 1),
+                                        ? Color.fromRGBO(0, 0, 0, 1)
+                                        : Color.fromRGBO(0, 0, 0, 1),
                                     width: 3),
                                 color: darkMode
                                     ? Color.fromRGBO(226, 229, 238, 1)
-                                    : Color.fromRGBO(26, 31, 41, 1),
+                                    : Color.fromRGBO(255, 255, 255, 1),
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(17))),
                             child: Center(
@@ -242,7 +242,7 @@ class _DescriptionScreenState extends State<DescriptionScreen> {
                                   fontSize: 20,
                                   color: darkMode
                                       ? Color.fromRGBO(26, 31, 41, 1)
-                                      : Color.fromRGBO(226, 229, 238, 1),
+                                      : Color.fromRGBO(0, 0, 0, 1),
                                   fontFamily: 'comfortaa'),
                             )),
                           ),

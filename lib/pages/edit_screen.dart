@@ -115,7 +115,7 @@ class _EditScreenState extends State<EditScreen> {
                       contentPadding:
                           EdgeInsetsDirectional.fromSTEB(50, 7, 0, 0),
                       hintStyle: TextStyle(
-                          color: Color.fromRGBO(176, 182, 189, 1),
+                          color: Color.fromRGBO(0, 0, 0, 1),
                           fontSize: 16,
                           fontFamily: 'onest'),
                       hintText: 'Информация',
